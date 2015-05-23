@@ -1,0 +1,45 @@
+@import "compass/css3"
+@import "compass/utilities/general/clearfix"
+
+@import "mixins"
+@import "type"
+@import "animate"
+
+// vendor
+@import "font-awesome.min"
+@import "partials/postagram"
+
+@import "partials/header"
+@import "partials/nav"
+@import "partials/instagram"
+@import "partials/quote"
+@import "partials/about"
+@import "partials/contact"
+@import "partials/modal"
+
+@import "partials/no-js"
+
+html
+    font-size: 62.5%
+
+body
+    position: relative
+
++text-highlight
+    background: rgb(0, 0, 0)
+
+.visually-hidden
+    opacity: 0
+
+.jumbotron
+    background-image: url(../img/header.jpg)
+    background-position: 50% 0
+    background-repeat: no-repeat
+    background-size: cover
+
+hr
+    margin: 50px auto
+    width: 150px
+    height: 5px
+    border: solid 0px transparent
+    background-color: $hr-colour
