@@ -95,4 +95,14 @@ var s,
 $(document).ready(function(){
     // Start the app when ready
     app.init();
+
+	$(document).bind("contextmenu", function(event) {
+		event.preventDefault();
+		$("<div class='custom-menu'>Right Click Disabled</div>")
+			.appendTo("body")
+			.css({top: event.pageY + "px", left: event.pageX + "px"});
+	}).bind("click", function(event) {
+		$("div.custom-menu").hide();
+	});
+
 });

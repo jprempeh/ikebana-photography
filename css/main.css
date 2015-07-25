@@ -4687,3 +4687,11 @@ hr {
   border: solid 0px transparent;
   background-color: #34495e;
 }
+
+.custom-menu {
+    z-index:1000;
+    position: absolute;
+    background-color:#C0C0C0;
+    border: 1px solid black;
+    padding: 2px;
+}
